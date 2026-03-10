@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sales Registration</title>
+    <style>
+      body {
+        /* background-color: pink; */
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: flex;   
+        height: 100vh;
+      }
+    </style>
+    <link rel="stylesheet" href="Sales Registration.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div>
+          <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div>
+          <a href="Sales management.html">Sales Management</a>
+        </div>
+        <div>
+          <a href="supplierRegistration.html">Supplier Registration</a>
+        </div>
+        <div>
+          <a href="Stock management">Stock Management</a>
+        </div>
+        <div>
+          <a href="Transport management">Transport Management</a>
+        </div>
+      </div>
+      <div class="content">
+        <form action="">
+          <!-- section 1 -->
+          <section>
+            <h1 style="text-align: center">Sales Regisration</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="Salesdate" required>Sales date</label>
+                <input type="date" />
+              </div>
+              <div class="input-section">
+                <label for="Salesperson">Sales person</label>
+                <select name="" id="sales person">
+                  <option value="Select person">Select a sales person</option>
+                  <option value="1">Gavin</option>
+                  <option value="2">Pavin</option>
+                  <option value="3">Felix</option>
+                  <option value="4">Elvis</option>
+                </select>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h1 style="text-align: center">Customer Details</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="Username">Name</label>
+                <input
+                  type="text"
+                  id="Name"
+                  placeholder="Enter full name"
+                  required
+                />
+              </div>
+              <div class="input-section">
+                <label for="Phonenumber">Phone number</label>
+                <input type="tel" placeholder="Enter phone number" required />
+              </div>
+            </div>
+                        
+            <div class="input-container">
+              <div class="input-section">
+                <label for="Email">Email</label>
+                <input type="text" placeholder="Email" required />
+              </div>
+              <div class="input-section">
+                <label for="Type">Type</label>
+                <select name="" id="Type">
+                  <option value="" required>select customer type</option>
+                  <option value="1">Retail</option>
+                  <option value="2">Wholesale</option>
+                </select>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h1 style="text-align: center">Items</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="Pdt">Pdt id</label>
+                <input type="text" id="Pdt id" required />
+              </div>
+              <div class="input-section">
+                <label for="Quantity">Quantity</label>
+                <input type="number" required />
+              </div>
+              <div class="input-section">
+                <label for="Unit price">Unit price</label>
+                <input type="number" required />
+              </div>
+            </div>
+                       
+            <div class="input-container">
+              <div class="input-section">
+                <label for="Pdt">Pdt id</label>
+                <input type="text" id="Pdt id" />
+              </div>
+              <div class="input-section">
+                <label for="Quantity">Quantity</label>
+                <input type="number" required />
+              </div>
+              <div class="input-section">
+                <label for="Unit price">Unit price</label>
+                <input type="number" required />
+              </div>
+            </div>
+        </section>       
+          <div class="button-container">
+            <button class="cancel-btn">Cancel</button>
+            <button class="submit-btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
