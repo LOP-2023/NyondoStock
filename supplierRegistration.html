@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Supplier Registration Form</title>
+  </head>
+  <link rel="stylesheet" href="supplierRegistration.css" />
+  <body>
+    <form class="main-container">
+      <h2>Supplier Registration Form</h2>
+
+      <div>
+        <label>Company Name</label>
+        <input
+          type="text"
+          name="company_name"
+          placeholder="Spe & sherry suppliers Ltd"
+          required
+        />
+      </div>
+      <div>
+        <label>Trading Name</label>
+        <input
+          type="text"
+          name="trading_name"
+          placeholder="S & S suppliers Ltd"
+        />
+      </div>
+
+      <div>
+        <label>Business Type</label>
+        <select name="business_type" required>
+          <option>Sole Proprietor</option>
+          <option>Partnership</option>
+          <option>Corporation</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
+        <label>Registration Number</label>
+        <input
+          type="text"
+          name="registration_number"
+          placeholder="10203055673129"
+          minlength="14"
+          maxlength="14"
+          required
+        />
+      </div>
+
+      <div>
+        <label>Year Established</label>
+        <input type="date" name="year_established" required />
+      </div>
+      <div>
+        <label>Tax Identification Number (TIN)</label>
+        <input
+          type="numbers"
+          name="tin"
+          minlength="10"
+          maxlength="10"
+          placeholder="1052105443"
+          required
+        />
+      </div>
+
+      <div class="declare">
+        <label>Address</label>
+        <textarea
+          name="address"
+          placeholder="Ntinda, Kampala, Uganda"
+        ></textarea>
+      </div>
+
+      <div>
+        <label>Director</label>
+        <input
+          type="text"
+          name="Director"
+          placeholder="Sherinah Spellah"
+          required
+        />
+      </div>
+      <div>
+        <label>Phone</label>
+        <input
+          type="text"
+          name="phone"
+          placeholder="0754888980"
+          minlength="10"
+          maxlength="10"
+          required
+        />
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="nyondostock@gmail.com"
+          required
+        />
+      </div>
+      <div>
+        <label>Website</label>
+        <input type="url" name="website" placeholder="www.nyondostock.co.ug" />
+      </div>
+
+      <div class="declare">
+        <label>Goods/Services Offered</label>
+        <textarea name="goods_services"></textarea>
+      </div>
+
+      <div>
+        <label>Bank Name</label>
+        <input
+          type="text"
+          name="bank_name"
+          placeholder="Equity bank"
+          required
+        />
+      </div>
+      <div>
+        <label>Account Number</label>
+        <input
+          type="numbers"
+          name="account_number"
+          placeholder="1032103427507"
+          minlength="13"
+          maxlength="13"
+        />
+      </div>
+
+      <div class="declare">
+        <label>Declaration</label>
+        <textarea name="declaration"></textarea>
+      </div>
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </body>
+</html>
