@@ -1,1 +1,167 @@
-.
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>NyondoStock Dashboard</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .sidebar {
+        height: 100vh;
+        background: #2c3e50;
+        color: white;
+        padding: 20px;
+      }
+
+      .sidebar a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin: 10px 0;
+      }
+
+      .card {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-2 sidebar">
+          <h4>NyondoStock</h4>
+          <hr />
+
+          <a href="#">Dashboard</a>
+          <a href="#">Products</a>
+          <a href="#">Suppliers</a>
+          <a href="#">Sales</a>
+          <a href="#">Purchases</a>
+          <a href="#">Reports</a>
+          <a href="#">Settings</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-10 p-4">
+          <h2 class="mb-4">Dashboard</h2>
+
+          <!-- Summary Cards -->
+          <div class="row mb-4">
+            <div class="col-md-3">
+              <div class="card text-center p-3">
+                <h6>Total Products</h6>
+                <h3>120</h3>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card text-center p-3">
+                <h6>Total Suppliers</h6>
+                <h3>25</h3>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card text-center p-3">
+                <h6>Sales Today</h6>
+                <h3>UGX 1,250,000</h3>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card text-center p-3">
+                <h6>Low Stock</h6>
+                <h3>8</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tables Section -->
+          <div class="row">
+            <!-- Low Stock Table -->
+            <div class="col-md-6">
+              <h5>Low Stock Products</h5>
+
+              <table class="table table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Cement</td>
+                    <td>10</td>
+                  </tr>
+
+                  <tr>
+                    <td>Nails</td>
+                    <td>5</td>
+                  </tr>
+
+                  <tr>
+                    <td>Paint</td>
+                    <td>3</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Recent Activities -->
+            <div class="col-md-6">
+              <h5>Recent Activities</h5>
+
+              <table class="table table-striped">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Date</th>
+                    <th>Activity</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>12 Mar 2026</td>
+                    <td>Supplier Registered</td>
+                  </tr>
+
+                  <tr>
+                    <td>11 Mar 2026</td>
+                    <td>Product Added</td>
+                  </tr>
+
+                  <tr>
+                    <td>10 Mar 2026</td>
+                    <td>Sale Recorded</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+
+          <!-- <div class="mt-4"> -->
+            <h5>Quick Actions</h5>
+
+            <button class="btn btn-primary">Add Product</button>
+            <button class="btn btn-success">Register Supplier</button>
+            <button class="btn btn-warning">Record Sale</button>
+            <button class="btn btn-info">Update Stock</button>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
